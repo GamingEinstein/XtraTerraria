@@ -1,0 +1,32 @@
+Have you wanted more content in the game? Content that not only improves certain aspects of key areas, but also adds a little touch here and there to improve the general experience?
+Well... HERE IT IS... at least it should anyway...
+
+The Xtra Terraria mod adds a variety of items, weapons, and enemies that not only keep to the feel of vanilla gameplay, but also improves much needed areas...
+
+Currently boasts:
+- XXX Enemies...
+- XXX Bosses...
+- XXX Items...
+- XXX Biomes...
+- XXX Structures...
+- Plus more to come...
+
+This mod is made with love and sweat, so if something is wrong or doesn't seem right, feel free to ask and suggest!
+
+Thanks for reading!
+- GamingEinstein
+
+------------------
+
+= Credits =
++ GamingEinstein - Mastermind and such, Owner and Creator
++ (your name here!) - (role here!)
+
+*** IMPORTANT: This mod's source code is public! So you can suggest changes, look at my terrible coding skills, and such! ***
+
+------------------
+
+(Full changelogs can be found on our discord server...)
+
+Alpha 0.1 Changelog:
+	- yeah...

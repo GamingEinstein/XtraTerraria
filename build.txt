@@ -1,0 +1,4 @@
+displayName = Xtra Terraria
+author = GamingEinstein
+version = 0.1
+homepage = https://github.com/GamingEinstein/XtraTerraria

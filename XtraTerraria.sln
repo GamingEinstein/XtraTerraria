@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32616.157
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "XtraTerraria", "XtraTerraria.csproj", "{0FF25BB9-1047-455E-A1B8-69CB13B3813B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0FF25BB9-1047-455E-A1B8-69CB13B3813B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0FF25BB9-1047-455E-A1B8-69CB13B3813B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0FF25BB9-1047-455E-A1B8-69CB13B3813B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0FF25BB9-1047-455E-A1B8-69CB13B3813B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F78B99D6-044B-4CFF-8BA2-468B61CBFC6A}
+	EndGlobalSection
+EndGlobal
