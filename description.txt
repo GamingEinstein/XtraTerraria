@@ -1,32 +1,23 @@
-Have you wanted more content in the game? Content that not only improves certain aspects of key areas, but also adds a little touch here and there to improve the general experience?
-Well... HERE IT IS... at least it should anyway...
+[c/ff0000:DISCLAIMER: This mod is still in early development! Nothing has yet to be finalized nor finished!]
+[c/ff0000:If you would like to help contribute to this, please join my Discord! Thank you!]
 
-The Xtra Terraria mod adds a variety of items, weapons, and enemies that not only keep to the feel of vanilla gameplay, but also improves much needed areas...
+[c/0000ff:Xtra Terraria] is a mod which aims to improve various areas of the game. This includes:
+- Early game Summoner and Mage
+- Several Biomes like the Ocean and Snow biomes
+- Endgame
+- World Evils
+- And more that I'm either forgetting or too lazy to add :shrug:
 
-Currently boasts:
-- XXX Enemies...
-- XXX Bosses...
-- XXX Items...
-- XXX Biomes...
-- XXX Structures...
+Currently features:
+- 0 Enemies...
+- 0 Bosses...
+- 3 Items (WIP)...
+- 1 Biomes (WIP)...
+- 0 Structures...
 - Plus more to come...
 
-This mod is made with love and sweat, so if something is wrong or doesn't seem right, feel free to ask and suggest!
+This mod is a passion project that I plan on working on for a while, so if something is wrong or doesn't seem right, feel free to ask and suggest!
+I am also looking for people to join the team! Join the Discord if you are interested or just want to hang around!
 
 Thanks for reading!
-- GamingEinstein
-
-------------------
-
-= Credits =
-+ GamingEinstein - Mastermind and such, Owner and Creator
-+ (your name here!) - (role here!)
-
-*** IMPORTANT: This mod's source code is public! So you can suggest changes, look at my terrible coding skills, and such! ***
-
-------------------
-
-(Full changelogs can be found on our discord server...)
-
-Alpha 0.1 Changelog:
-	- yeah...
+- [c/ff00ff:GamingEinstein]
