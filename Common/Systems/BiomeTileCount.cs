@@ -1,16 +1,15 @@
-﻿using System;
-using XtraTerraria.Content.Placeables.Tiles;
+﻿using XtraTerraria.Content.Placeables.Tiles;
+using System;
 using Terraria.ModLoader;
 
 namespace XtraTerraria.Common.Systems
 {
     public class BiomeTileCount : ModSystem
     {
-        public int basaltTileCount;
-
+        public int floodedCavesTileCount;
         public override void TileCountsAvailable(ReadOnlySpan<int> tileCounts)
         {
-            basaltTileCount = tileCounts[ModContent.TileType<BasaltTile>()];
+            floodedCavesTileCount = tileCounts[ModContent.TileType<BasaltTile>()];
         }
     }
 }

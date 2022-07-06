@@ -11,6 +11,10 @@
     <PackageReference Include="tModLoader.CodeAssist" Version="0.1.*" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Assets\Music\" />
     <Folder Include="Assets\Textures\Backgrounds\" />
+    <Folder Include="Assets\Textures\Items\Placeables\Walls\" />
+    <Folder Include="Assets\Textures\Placeables\Walls\" />
+    <Folder Include="Content\Placeables\Walls\" />
   </ItemGroup>
 </Project>

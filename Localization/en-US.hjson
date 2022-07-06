@@ -1,0 +1,12 @@
+﻿Mods: {
+	ExampleMod: {
+		Config: {
+			ItemHeader: Items
+
+			DevSwordToggle: {
+				Label: Toggle DevSword
+				Tooltip: Here for testing... yeah
+			}
+		}
+	}
+}

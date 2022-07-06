@@ -9,9 +9,9 @@ namespace XtraTerraria.Content.Biomes
 {
     public class FloodedCavesBiome : ModBiome
     {
-        public override ModUndergroundBackgroundStyle UndergroundBackgroundStyle => ModContent.Find<ModUndergroundBackgroundStyle>("XtraTerraria/FloodedCavesBGStyle");
+        public override ModUndergroundBackgroundStyle UndergroundBackgroundStyle => ModContent.Find<ModUndergroundBackgroundStyle>("XtraTerraria/Content/Biomes/FloodedCavesBGStyle");
 
-        //public override int Music => MusicLoader.GetMusicSlot(Mod, "Assets/Music/FloodedCavesSong");
+        //public override int Music => MusicLoader.GetMusicSlot(Mod, "Assets/Music/FloodedCaves");
         public override int Music => MusicID.OtherworldlyOcean;
 
         public override SceneEffectPriority Priority => SceneEffectPriority.BiomeLow;
@@ -27,8 +27,9 @@ namespace XtraTerraria.Content.Biomes
 
         public override bool IsBiomeActive(Player player)
         {
-            return player.ZoneDirtLayerHeight &&
-                ModContent.GetInstance<BiomeTileCount>().basaltTileCount >= 150;
+            return (player.ZoneDirtLayerHeight &&
+                player.ZoneBeach) &&
+                ModContent.GetInstance<BiomeTileCount>().floodedCavesTileCount >= 150;
         }
     }
 }

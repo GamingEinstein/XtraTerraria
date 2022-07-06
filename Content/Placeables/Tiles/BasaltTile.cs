@@ -1,4 +1,5 @@
 ﻿using XtraTerraria.Content.Items.Placeables.Tiles;
+using static XtraTerraria.ModClasses.XtraTerraria;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
@@ -8,7 +9,9 @@ namespace XtraTerraria.Content.Placeables.Tiles
 {
 	public class BasaltTile : ModTile
 	{
-		public override void SetStaticDefaults()
+		public override string Texture => AssetPathTextures + "Placeables/Tiles/BasaltTile";
+
+        public override void SetStaticDefaults()
 		{
 			Main.tileSolid[Type] = true;
 			Main.tileMergeDirt[Type] = true;

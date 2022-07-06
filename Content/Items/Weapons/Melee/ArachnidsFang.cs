@@ -1,5 +1,5 @@
-﻿using Terraria;
-using Terraria.GameContent.Creative;
+﻿using static XtraTerraria.ModClasses.XtraTerraria;
+using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
@@ -7,10 +7,11 @@ namespace XtraTerraria.Content.Items.Weapons.Melee
 {
     public class ArachnidsFang : ModItem
     {
+        public override string Texture => AssetPathTextures + "Items/Weapons/Melee/ArachnidsFang";
+
         public override void SetStaticDefaults()
         {
             DisplayName.SetDefault("Arachnid's Fang");
-            //Tooltip.SetDefault("");
         }
 
         public override void SetDefaults()
@@ -41,7 +42,7 @@ namespace XtraTerraria.Content.Items.Weapons.Melee
         public override void OnHitNPC(Player player, NPC target, int damage, float knockBack, bool crit)
         {
             base.OnHitNPC(player, target, damage, knockBack, crit);
-            target.AddBuff(BuffID.Venom, 600);
+            target.AddBuff(BuffID.Venom, (60 * 10));
         }
     }
 }

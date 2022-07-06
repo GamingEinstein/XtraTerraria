@@ -1,9 +1,9 @@
 displayName = [c/0000ff:Xtra Terraria] [c/ff0000:(WIP)]
 author = GamingEinstein
-version = 0.1.1
+version = 0.1.2
 homepage = https://discord.gg/J9Ur6DVmJ7
 hideCode = false
 hideResources = false
 includeSource = true;
-buildIgnore = *.csproj, *.gitignore, *.gitattributes, *.md, *.user, obj\*, bin\*, .vs\*
+buildIgnore = *.csproj, *.user, obj\*, bin\*, .vs\*, Github\*
 includePDB = true

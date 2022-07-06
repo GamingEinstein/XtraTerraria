@@ -1,11 +1,21 @@
+using XtraTerraria.Common.Configs;
+using static XtraTerraria.ModClasses.XtraTerraria;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
+using static Terraria.ModLoader.ModContent;
 
 namespace XtraTerraria.Content.Items.Weapons.Melee
 {
     public class DevSword : ModItem
     {
+        public override string Texture => AssetPathTextures + "Items/Weapons/Melee/DevSword";
+
+        public override bool IsLoadingEnabled(Mod mod)
+        {
+            return GetInstance<XtraTerrariaConfig>().DevSwordToggle;
+        }
+
         public override void SetStaticDefaults()
         {
             DisplayName.SetDefault("Dev Sword");
@@ -27,13 +37,5 @@ namespace XtraTerraria.Content.Items.Weapons.Melee
             Item.UseSound = SoundID.Item1;
             Item.autoReuse = true;
         }
-
-        /*public override void AddRecipes()
-        {
-            Recipe recipe = CreateRecipe();
-            recipe.AddIngredient(ItemID.DirtBlock, 10);
-            recipe.AddTile(TileID.WorkBenches);
-            recipe.Register();
-        }*/
     }
 }
