@@ -5,5 +5,5 @@ homepage = https://discord.gg/J9Ur6DVmJ7
 hideCode = false
 hideResources = false
 includeSource = true;
-buildIgnore = *.csproj, *.user, obj\*, bin\*, .vs\*, Github\*
+buildIgnore = *.gitattributes, *.gitignore, *.md, *.csproj, *.user, obj\*, bin\*, .vs\*
 includePDB = true
