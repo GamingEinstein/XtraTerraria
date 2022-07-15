@@ -1,10 +1,9 @@
 ﻿using XtraTerraria.Content.Placeables.Tiles;
+using XtraTerraria.Content.Placeables.Walls;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 using static Terraria.ModLoader.ModContent;
-
-//I'm keeping most of this until I know for that I don't need them...
 
 namespace XtraTerraria.ModClasses
 {
@@ -48,6 +47,8 @@ namespace XtraTerraria.ModClasses
                         yPos > beachBottomCheck + 25)
                     {
                         WorldGen.PlaceTile(xPos, yPos, TileType<BasaltTile>(), true, true, -1, 0);
+                        WorldGen.KillWall(xPos, yPos);
+                        WorldGen.PlaceWall(xPos, yPos, WallType<BasaltWall>(), true);
                         tileCheck = Framing.GetTileSafely(xPos, yPos);
                         if(tileCheck.Slope != 0)
                             WorldGen.SlopeTile(xPos, yPos, 0);

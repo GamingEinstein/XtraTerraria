@@ -1,18 +1,19 @@
-﻿using XtraTerraria.Common.Systems;
+﻿using static XtraTerraria.ModClasses.XtraTerraria;
+using XtraTerraria.Common.Systems;
 using Microsoft.Xna.Framework;
 using System;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
+using static Terraria.ModLoader.ModContent;
 
 namespace XtraTerraria.Content.Biomes
 {
     public class FloodedCavesBiome : ModBiome
     {
-        public override ModUndergroundBackgroundStyle UndergroundBackgroundStyle => ModContent.Find<ModUndergroundBackgroundStyle>("XtraTerraria/Content/Biomes/FloodedCavesBGStyle");
+        public override ModUndergroundBackgroundStyle UndergroundBackgroundStyle => Find<ModUndergroundBackgroundStyle>("XtraTerraria/FloodedCavesBGStyle");
 
-        //public override int Music => MusicLoader.GetMusicSlot(Mod, "Assets/Music/FloodedCaves");
-        public override int Music => MusicID.OtherworldlyOcean;
+        public override int Music => MusicLoader.GetMusicSlot(Mod, "Assets/Music/Biomes/FloodedCaves");
 
         public override SceneEffectPriority Priority => SceneEffectPriority.BiomeLow;
 
@@ -29,7 +30,7 @@ namespace XtraTerraria.Content.Biomes
         {
             return (player.ZoneDirtLayerHeight &&
                 player.ZoneBeach) &&
-                ModContent.GetInstance<BiomeTileCount>().floodedCavesTileCount >= 150;
+                GetInstance<BiomeTileCount>().floodedCavesTileCount >= 150;
         }
     }
 }

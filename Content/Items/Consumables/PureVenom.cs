@@ -1,4 +1,5 @@
-﻿using static XtraTerraria.ModClasses.XtraTerraria;
+﻿
+using static XtraTerraria.ModClasses.XtraTerraria;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
@@ -12,12 +13,12 @@ namespace XtraTerraria.Content.Items.Consumables
         public override void SetStaticDefaults()
         {
             DisplayName.SetDefault("Pure Venom");
-            Tooltip.SetDefault("It's literally venom... You probably shouldn't eat it...");
+            Tooltip.SetDefault("Not recommended to be eaten");
         }
 
         public override void SetDefaults()
         {
-            Item.DefaultToFood(18, 32, BuffID.Venom, (60 * 15), true);
+            Item.DefaultToFood(12, 30, BuffID.Venom, (60 * 15), true);
             Item.rare = ItemRarityID.White;
         }
     }
