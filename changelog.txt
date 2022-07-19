@@ -3,7 +3,7 @@
 [*] Added New Content:
 [list]
 	[*] Splinter Spitter - Mage Weapon
-	[*] Blade of Water - Melee Weapon
+	[*] Tidal Slicer - Melee Weapon
 	[*] Bubbly Shell - Generic Item
 [/list]
 [*] Added more to Flooded Caves:

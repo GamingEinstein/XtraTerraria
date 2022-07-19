@@ -10,15 +10,14 @@ using static Terraria.ModLoader.ModContent;
 
 namespace XtraTerraria.Content.Items.Weapons.Melee
 {
-    public class BladeOfWater : ModItem
+    public class TidalSlicer : ModItem
     {
-        public override string Texture => AssetPathTextures + "Items/Weapons/Melee/BladeOfWater";
+        public override string Texture => AssetPathTextures + "Items/Weapons/Melee/TidalSlicer";
 
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Blade of Water");
-            Tooltip.SetDefault("Shoots a stream of water" +
-                "\nOne of the 4 Biome Swords");
+            DisplayName.SetDefault("Tidal Slicer");
+            Tooltip.SetDefault("Shoots a stream of water");
             CreativeItemSacrificesCatalog.Instance.SacrificeCountNeededByItemId[Type] = 3;
         }
 
@@ -44,9 +43,9 @@ namespace XtraTerraria.Content.Items.Weapons.Melee
         public override void AddRecipes()
         {
             CreateRecipe()
-                .AddIngredient(ItemID.Coral, 5)
+                .AddIngredient(ItemID.Coral, 3)
                 .AddIngredient(ItemID.Seashell, 5)
-                .AddIngredient<BubblyShell>()
+                .AddIngredient<BubblyShell>(7)
                 .AddTile(TileID.Anvils)
                 .Register();
         }
