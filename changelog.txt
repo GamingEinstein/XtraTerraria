@@ -1,14 +1,21 @@
-Alpha 0.2.0:
-- Added New Content
-	- Basalt Wall
-	- Pebble Pelter (Pre-HM Magic Weapon)
-- Added new Music for Flooded Caves
-- Updated Sprites
-- Added Test Config
-- Added Localization File for US English
-- Added Interchangeable Emblems and WoF Weapons
-- Improved various backend things
-- Again changed the workshop to actually look correct
-- Added Small And Workshop Icons, plus altered Icon
-
+[h3]Alpha 0.3.0:[/h3]
+[olist]
+[*] Added New Content:
+[list]
+	[*] Splinter Spitter - Mage Weapon
+	[*] Blade of Water - Melee Weapon
+	[*] Bubbly Shell - Generic Item
+[/list]
+[*] Added more to Flooded Caves:
+[list]
+	[*] Added some form of a cave system
+	[*] Added Obsidian deposits
+	[*] Made the ability to access it based on a config
+	[*] Added Coelacanth 
+	[*] Trying to make Jellyfish spawn
+[/list]
+[*] Added support for the Bestiary (I think)
+[*] Updated description files
+[/olist]
+[hr]
 If you would like to contribute, join the discord: https://discord.gg/J9Ur6DVmJ7

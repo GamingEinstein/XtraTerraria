@@ -14,12 +14,21 @@ namespace XtraTerraria.Content.Placeables.Walls
 
 		public override void SetStaticDefaults()
 		{
-			Main.wallHouse[Type] = true;
-
+			Main.wallHouse[Type] = false;
+			Main.updateRate = 999;
+			
 			DustType = DustID.Stone;
 			ItemDrop = ItemType<BasaltWallItem>();
 
-			AddMapEntry(new Color(125, 125, 125));
+			AddMapEntry(new Color(24, 24, 24));
 		}
-	}
+
+        public override void RandomUpdate(int i, int j)
+        {
+			Tile tile = Framing.GetTileSafely(i ,j);
+			if (tile.LiquidAmount <= 0)
+				tile.LiquidType = LiquidID.Water;
+
+        }
+    }
 }

@@ -28,8 +28,7 @@ namespace XtraTerraria.Content.Biomes
 
         public override bool IsBiomeActive(Player player)
         {
-            return (player.ZoneDirtLayerHeight &&
-                player.ZoneBeach) &&
+            return (player.ZoneDirtLayerHeight || player.ZoneRockLayerHeight) &&
                 GetInstance<BiomeTileCount>().floodedCavesTileCount >= 150;
         }
     }

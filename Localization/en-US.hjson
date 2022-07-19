@@ -1,11 +1,11 @@
 ﻿Mods: {
 	XtraTerraria: {
 		Config: {
-			ItemHeader: Items
+			TestFeaturesHeader: Test Features
 
-			DevSwordToggle: {
-				Label: Toggle DevSword
-				Tooltip: Here for testing... yeah
+			ToggleTestGeneration: {
+				Label: Toggle Test Generation (Press PgUp + Pause)
+				Tooltip: Enables the ability to test Flooded Caves. Not recommended, as it's still a WIP and irreverable on the world...
 			}
 		}
 	}

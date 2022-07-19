@@ -2,11 +2,11 @@
 If you would like to help contribute to this, please join the Discord! Thank you!
 
 [c/0000ff:Xtra Terraria] is a mod which aims to improve various areas of the game. This includes:
-- Early game Summoner and Mage
-- Several Biomes like the Ocean and Snow biomes
-- Endgame
-- World Evils
-- And more that I'm either forgetting or too lazy to add :shrug:
+= Early Pre-Hardmode Summoner and Mage
+= Various Biome and Mini-Biome improvements
+= Reduce redundant and unnecessary grind
+= Reduce the rush of Endgame
+= And more
 
 This mod is a passion project that I plan on working on for a while, so if something is wrong or doesn't seem right, feel free to ask and suggest!
 I am also looking for people to help contribute! Join the Discord if you are interested or just want to hang around!
@@ -15,15 +15,15 @@ Thanks for reading!
 - [c/ff00ff:GamingEinstein]
 
 Currently features:
-- 0 Enemies...
-- 0 Bosses...
-- 6 Items...
-- 1 Biomes...
-- 0 Structures...
+- 4 Items
+- 2 Placeables
+- 5 Weapons
+- 1 NPC
+- 1 Biome
 - Plus more to come...
 
 Credits:
 - GamingEinstein: Owner and Lead Developer
-- Anitplay: Lead Musician
+- Anitbody: Lead Musician
 - CoolKevin99990: Lead Spriter
 - Dyl: Spriter

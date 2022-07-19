@@ -7,12 +7,12 @@ namespace XtraTerraria.Common.Configs
     {
         public override ConfigScope Mode => ConfigScope.ServerSide;
 
-        [Header("$Mods.XtraTerraria.Config.ItemHeader")]
-        [Label("$Mods.XtraTerraria.Config.DevSwordToggle.Label")]
-        [Tooltip("$Mods.XtraTerraria.Config.DevSwordToggle.Tooltip")]
-        [DefaultValue(true)]
-        [ReloadRequired]
+        [Header("$Mods.XtraTerraria.Config.TestFeaturesHeader")]
 
-        public bool DevSwordToggle;
+        [Label("$Mods.XtraTerraria.Config.ToggleTestGeneration.Label")]
+        [Tooltip("$Mods.XtraTerraria.Config.ToggleTestGeneration.Tooltip")]
+        [DefaultValue(false)]
+        public bool ToggleTestGeneration;
+
     }
 }

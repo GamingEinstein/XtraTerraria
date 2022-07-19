@@ -1,6 +1,8 @@
 ﻿using XtraTerraria.Content.Items.Placeables.Tiles;
 using XtraTerraria.Content.Placeables.Walls;
 using static XtraTerraria.ModClasses.XtraTerraria;
+using Terraria;
+using Terraria.GameContent.Creative;
 using Terraria.ID;
 using Terraria.ModLoader;
 using static Terraria.ModLoader.ModContent;
@@ -14,6 +16,7 @@ namespace XtraTerraria.Content.Items.Placeables.Walls
 		public override void SetStaticDefaults()
 		{
 			DisplayName.SetDefault("Basalt Wall");
+			CreativeItemSacrificesCatalog.Instance.SacrificeCountNeededByItemId[Type] = 100;
 		}
 
 		public override void SetDefaults()

@@ -12,11 +12,6 @@ namespace XtraTerraria.Content.Items.Weapons.Melee
     {
         public override string Texture => AssetPathTextures + "Items/Weapons/Melee/DevSword";
 
-        public override bool IsLoadingEnabled(Mod mod)
-        {
-            return GetInstance<XtraTerrariaConfig>().DevSwordToggle;
-        }
-
         public override void SetStaticDefaults()
         {
             DisplayName.SetDefault("Dev Sword");

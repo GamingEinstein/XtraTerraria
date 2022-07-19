@@ -21,7 +21,7 @@ namespace XtraTerraria.Content.Placeables.Tiles
 			DustType = DustID.Stone;
 			HitSound = SoundID.Tink;
 			ItemDrop = ItemType<BasaltItem>();
-			AddMapEntry(new Color(200, 200, 200));
+			AddMapEntry(new Color(41, 40, 38));
 		}
 	}
 }

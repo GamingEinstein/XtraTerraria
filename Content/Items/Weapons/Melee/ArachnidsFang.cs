@@ -1,7 +1,9 @@
 ﻿using static XtraTerraria.ModClasses.XtraTerraria;
 using Terraria;
+using Terraria.GameContent.Creative;
 using Terraria.ID;
 using Terraria.ModLoader;
+using static Terraria.ModLoader.ModContent;
 
 namespace XtraTerraria.Content.Items.Weapons.Melee
 {
@@ -12,6 +14,7 @@ namespace XtraTerraria.Content.Items.Weapons.Melee
         public override void SetStaticDefaults()
         {
             DisplayName.SetDefault("Arachnid's Fang");
+            CreativeItemSacrificesCatalog.Instance.SacrificeCountNeededByItemId[Type] = 3;
         }
 
         public override void SetDefaults()

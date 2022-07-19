@@ -1,11 +1,12 @@
 ﻿using XtraTerraria.Content.Projectiles;
 using static XtraTerraria.ModClasses.XtraTerraria;
+using Microsoft.Xna.Framework;
 using Terraria;
 using Terraria.DataStructures;
+using Terraria.GameContent.Creative;
 using Terraria.ID;
 using Terraria.ModLoader;
 using static Terraria.ModLoader.ModContent;
-using Microsoft.Xna.Framework;
 
 namespace XtraTerraria.Content.Items.Weapons.Mage
 {
@@ -17,18 +18,19 @@ namespace XtraTerraria.Content.Items.Weapons.Mage
         {
             DisplayName.SetDefault("Pebble Pelter");
             Tooltip.SetDefault("Shoots 3 pebbles at different angles");
+            CreativeItemSacrificesCatalog.Instance.SacrificeCountNeededByItemId[Type] = 3;
         }
 
         public override void SetDefaults()
         {
-            Item.damage = 10;
+            Item.damage = 6;
             Item.DamageType = DamageClass.Magic;
             Item.noMelee = true;
-            Item.mana = 10;
+            Item.mana = 4;
             Item.width = 28;
             Item.height = 32;
-            Item.useTime = 20;
-            Item.useAnimation = 20;
+            Item.useTime = 25;
+            Item.useAnimation = 25;
             Item.useStyle = ItemUseStyleID.Shoot;
             Item.knockBack = 5;
             Item.value = Item.sellPrice(silver: 5);
@@ -36,7 +38,7 @@ namespace XtraTerraria.Content.Items.Weapons.Mage
             Item.UseSound = SoundID.Item25;
             Item.autoReuse = true;
             Item.shoot = ProjectileType<PebblePelterPebble>();
-            Item.shootSpeed = 32f;
+            Item.shootSpeed = 24f;
             Item.crit = 6;
         }
 

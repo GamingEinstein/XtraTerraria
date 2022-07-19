@@ -1,6 +1,6 @@
-﻿
-using static XtraTerraria.ModClasses.XtraTerraria;
+﻿using static XtraTerraria.ModClasses.XtraTerraria;
 using Terraria;
+using Terraria.GameContent.Creative;
 using Terraria.ID;
 using Terraria.ModLoader;
 
@@ -14,6 +14,7 @@ namespace XtraTerraria.Content.Items.Consumables
         {
             DisplayName.SetDefault("Pure Venom");
             Tooltip.SetDefault("Not recommended to be eaten");
+            CreativeItemSacrificesCatalog.Instance.SacrificeCountNeededByItemId[Type] = 100;
         }
 
         public override void SetDefaults()

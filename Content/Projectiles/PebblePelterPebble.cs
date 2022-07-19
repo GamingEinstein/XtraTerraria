@@ -1,9 +1,9 @@
 ﻿using static XtraTerraria.ModClasses.XtraTerraria;
+using Microsoft.Xna.Framework;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 using static Terraria.ModLoader.ModContent;
-using Microsoft.Xna.Framework;
 
 namespace XtraTerraria.Content.Projectiles
 {
@@ -18,7 +18,7 @@ namespace XtraTerraria.Content.Projectiles
             Projectile.DamageType = DamageClass.Magic;
             Projectile.ignoreWater = false;
             Projectile.tileCollide = true;
-            Projectile.penetrate = -1;
+            Projectile.penetrate = 2;
             Projectile.alpha = 0;
             Projectile.aiStyle = -1;
         }
@@ -31,6 +31,7 @@ namespace XtraTerraria.Content.Projectiles
         {
             Projectile.ai[0] += 1f;
             Projectile.netUpdate = true;
+
             if (Projectile.ai[0] >= 15f)
             {
                 Projectile.ai[0] = 15f;
