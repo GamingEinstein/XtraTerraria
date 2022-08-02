@@ -1,52 +1,61 @@
-﻿using XtraTerraria.Common.Configs;
+﻿using static XtraTerraria.ModClasses.XtraTerraria;
 using static XtraTerraria.ModClasses.XtraTerrariaGeneration;
-using static XtraTerraria.ModClasses.XtraTerraria;
-using Microsoft.Xna.Framework.Input;
+using static XtraTerraria.ModClasses.XtraTerrariaGenerationHelpers;
+using System;
+using System.Collections.Generic;
 using Terraria;
+using Terraria.GameContent.Generation;
 using Terraria.ID;
+using Terraria.IO;
 using Terraria.ModLoader;
+using Terraria.WorldBuilding;
 using static Terraria.ModLoader.ModContent;
 
 namespace XtraTerraria.ModClasses
 {
     public class XtraTerrariaWorld : ModSystem
     {
-        //Everything here is only a placeholder for testing the generation of the biome. It's recommended to not mess with it...
+        // Everything here is only a placeholder for testing the generation of the biome. It's recommended to not mess with it...
 
-        public static bool JustPressed(Keys key)
-		{
-			return Main.keyState.IsKeyDown(key) && !Main.oldKeyState.IsKeyDown(key);
-		}
+        public override void ModifyWorldGenTasks(List<GenPass> tasks, ref float totalWeight)
+        {
+			int MicroBiomesIndex = tasks.FindIndex(genpass => genpass.Name.Equals("Micro Biomes"));
 
-		public override void PostUpdateEverything()
-		{
-			if (JustPressed(Keys.PageUp) && GetInstance<XtraTerrariaConfig>().ToggleTestGeneration)
-			{
-				Main.NewText("Woah there. You have discovered a test feature! It is not recommended to continue beyond this point as it could break things." +
-					"\nIf you're really curious, go ahead and press the Pause button on your Keyboard... I'm not responsible for what could happen...");
-				if (JustPressed(Keys.Pause))
-					TestMethod(175, 0);
-			}
-			/*if (JustPressed(Keys.PageDown))
-				TestMethod(Main.maxTilesX - 200, 0);*/
-		}
+			if (MicroBiomesIndex != -1)
+				tasks.Insert(MicroBiomesIndex + 1, new PassLegacy("Expanding the Ocean", OceanExpanding));
+        }
 
-		private static void TestMethod(int worldX, int worldY)
+		private void OceanExpanding(GenerationProgress progress, GameConfiguration configuration)
 		{
-			int dungeonSide;
+			progress.Message = "Expanding the Ocean";
+
+			int worldX = 175;
+			int worldY = 0;
+
+			// Gets the side the Dungeon is on...
+			bool dungeonLeftSide;
 
 			if (Main.dungeonX > Main.maxTilesX / 2)
-				dungeonSide = 0;
+				dungeonLeftSide = false;
 			else
-				dungeonSide = 1;
+				dungeonLeftSide = true;
 
+			// Change worldX to be on right side if Dungeon is on the left side
+			if (dungeonLeftSide)
+				worldX = Main.maxTilesX - worldX;
+
+			// Checks until we reach the Beach surface... or the world surface, I guess...
 			while (worldY < Main.worldSurface)
 			{
 				if (WorldGen.SolidTile(worldX, worldY))
 				{
 					Tile foundTile = Framing.GetTileSafely(worldX, worldY);
 					if (foundTile.TileType == TileID.Sand || foundTile.TileType == TileID.HardenedSand || foundTile.TileType == TileID.ShellPile)
-						GenerateFloodedCaves(worldX, worldY, dungeonSide);
+					{
+						// Generate our Biome... yay
+						GenerateFloodedCaves(worldX, worldY, dungeonLeftSide);
+						//GenerateCorruptedAbyss(floodedCavesEnd_1, floodedCavesEnd_2);
+					}
 
 					break;
 				}

@@ -1,8 +1,7 @@
-﻿using XtraTerraria.Content.Items.Misc;
+﻿using XtraTerraria.Content.Items.Consumables;
 using static XtraTerraria.ModClasses.XtraTerraria;
 using Microsoft.Xna.Framework;
 using Terraria;
-using Terraria.DataStructures;
 using Terraria.GameContent.Creative;
 using Terraria.ID;
 using Terraria.ModLoader;
@@ -18,7 +17,7 @@ namespace XtraTerraria.Content.Items.Weapons.Melee
         {
             DisplayName.SetDefault("Tidal Slicer");
             Tooltip.SetDefault("Shoots a stream of water");
-            CreativeItemSacrificesCatalog.Instance.SacrificeCountNeededByItemId[Type] = 3;
+            CreativeItemSacrificesCatalog.Instance.SacrificeCountNeededByItemId[Type] = 1;
         }
 
         public override void SetDefaults()
@@ -29,6 +28,7 @@ namespace XtraTerraria.Content.Items.Weapons.Melee
             Item.width = 48;
             Item.height = 48;
             Item.useTime = 20;
+            Item.useTurn = true;
             Item.useAnimation = 20;
             Item.useStyle = ItemUseStyleID.Swing;
             Item.knockBack = 10;

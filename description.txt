@@ -1,24 +1,25 @@
 [c/ff0000:DISCLAIMER:] This mod is still in early development! Nothing has yet to be finalized nor finished!
-If you would like to help contribute to this, please join the Discord! Thank you!
+If you would like to help contribute to this, please continue reading! Thank you!
 
-[c/0000ff:Xtra Terraria] is a mod which aims to improve various areas of the game. This includes:
-= Early Pre-Hardmode Summoner and Mage
-= Various Biome and Mini-Biome improvements
-= Reduce redundant and unnecessary grind
-= Reduce the rush of Endgame
-= And more
+Xtra Terraria is a mod which aims to improve various aspects of all points of progression throughout vanilla gameplay while also adding it's own features
+Currently I plan on improving the following:
+= Reduce overall grind of certain key areas, such as Early Hardmode
+= Improve early game Summoner and Mage
+= Add more incentives to biomes such as the Snow, Hallow, Ocean, and World Evils
+= Improve Micro-Biomes like Granite, Marble, and Spider Caves
+= Add unique structures to the Underground
+= And more to come!
 
-This mod is a passion project that I plan on working on for a while, so if something is wrong or doesn't seem right, feel free to ask and suggest!
-I am also looking for people to help contribute! Join the Discord if you are interested or just want to hang around!
+I am also looking for people to help contribute! Check the Forum Thread for more information!
 
 Thanks for reading!
 - [c/ff00ff:GamingEinstein]
 
 Currently features:
-- 4 Items
-- 2 Placeables
-- 5 Weapons
-- 1 NPC
+- 5 Items
+- 3 Placeables
+- 7 Weapons
+- 3 NPCs
 - 1 Biome
 - Plus more to come...
 

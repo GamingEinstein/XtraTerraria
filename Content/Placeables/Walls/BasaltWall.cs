@@ -25,10 +25,10 @@ namespace XtraTerraria.Content.Placeables.Walls
 
         public override void RandomUpdate(int i, int j)
         {
-			Tile tile = Framing.GetTileSafely(i ,j);
-			if (tile.LiquidAmount <= 0)
-				tile.LiquidType = LiquidID.Water;
-
-        }
+			Tile tile = Main.tile[i, j];
+			tile.LiquidType = LiquidID.Water;
+			tile.LiquidAmount = 255;
+			WorldGen.TileFrame(i, j);
+		}
     }
 }

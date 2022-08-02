@@ -1,21 +1,22 @@
 [h1]Xtra Terraria[/h1]
-[url=https://discord.gg/J9Ur6DVmJ7]Discord[/url]
+[url=https://forums.terraria.org/index.php?threads/xtra-terraria-recruiting.113534/]Forum Thread[/url] [url=https://discord.gg/J9Ur6DVmJ7]Discord[/url]
 
 [b]DISCLAIMER:[/b] [i]This mod is still in early development! Nothing has yet to be finalized nor finished![/i]
-[i]If you would like to help contribute to this, please join my Discord! Thank you![/i]
+[i]If you would like to help contribute to this, please join the Discord! Thank you![/i]
 
-Xtra Terraria is a mod which aims to improve various areas of the game. This includes:
+Xtra Terraria is a mod which aims to improve various aspects of all points of progression throughout vanilla gameplay while also adding it's own features
+Currently I plan on improving the following:
 [list]
-[*] Early Pre-Hardmode Summoner and Mage
-[*] Various Biome and Mini-Biome improvements
-[*] Reduce redundant and unnecessary grind
-[*] Reduce the rush of Endgame
-[*] And more
+[*] Reduce overall grind of certain key areas, such as Early Hardmode
+[*] Improve early game Summoner and Mage
+[*] Add more incentives to biomes such as the Snow, Hallow, Ocean, and World Evils
+[*] Improve Micro-Biomes like Granite, Marble, and Spider Caves
+[*] Add unique structures to the Underground
+[*] And more to come!
 [/list]
 
 [hr][/hr]
-This mod is a passion project that I plan on working on for a while, so if something is wrong or doesn't seem right, feel free to ask and suggest!
-I am also looking for people to join the team! Join the Discord if you are interested or just want to hang around!
+I am also looking for people to help contribute! Join the Discord if you are interested or just want to hang around!
 
 Thanks for reading!
 - GamingEinstein
@@ -23,10 +24,10 @@ Thanks for reading!
 [hr][/hr]
 [h2]Currently features:[/h2]
 [list]
-[*] 4 Items
-[*] 2 Placeables
-[*] 5 Weapons
-[*] 1 NPC
+[*] 5 Items
+[*] 3 Placeables
+[*] 7 Weapons
+[*] 3 NPCs
 [*] 1 Biome
 [*] Plus more to come...
 [/list]

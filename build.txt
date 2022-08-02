@@ -1,9 +1,9 @@
-displayName = Xtra Terraria [c/ff0000:(WIP)]
+displayName = Xtra Terraria
 author = GamingEinstein
-version = 0.3.0
+version = 0.4.0
 homepage = https://forums.terraria.org/index.php?threads/xtra-terraria-wip-recruiting.113534/
 hideCode = false
 hideResources = false
-includeSource = true;
+includeSource = true
 buildIgnore = *.gitattributes, *.gitignore, *.md, *.csproj, *.user, obj\*, bin\*, .vs\*, NotReady\*
 includePDB = true

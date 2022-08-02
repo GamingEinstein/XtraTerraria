@@ -21,8 +21,8 @@ namespace XtraTerraria.Content.Items.Placeables.Tiles
 
 		public override void SetDefaults()
 		{
-			Item.width = 12;
-			Item.height = 12;
+			Item.width = 16;
+			Item.height = 16;
 			Item.maxStack = 999;
 			Item.useTurn = true;
 			Item.autoReuse = true;

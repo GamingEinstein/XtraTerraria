@@ -1,21 +1,27 @@
-[h3]Alpha 0.3.0:[/h3]
+[h3]Alpha 0.4.0:[/h3]
+[list]
+[*] Additions:
 [olist]
-[*] Added New Content:
-[list]
-	[*] Splinter Spitter - Mage Weapon
-	[*] Tidal Slicer - Melee Weapon
-	[*] Bubbly Shell - Generic Item
-[/list]
-[*] Added more to Flooded Caves:
-[list]
-	[*] Added some form of a cave system
-	[*] Added Obsidian deposits
-	[*] Made the ability to access it based on a config
-	[*] Added Coelacanth 
-	[*] Trying to make Jellyfish spawn
-[/list]
-[*] Added support for the Bestiary (I think)
-[*] Updated description files
+	[*] Added Scorium. Generates in the Flooded Caves
+	[*] Added Endoflare
+	[*] Added Rotten Crossbow
+	[*] Added Interchangeable recipes for World Evil items
+	[*] Added the ability for the Flooded Caves to generate on the right side of the world properly
+	[*] Added support for all world sizes
 [/olist]
+[*] Changes:
+[olist]
+	[*] Bubbly Shell restores breath on use
+	[*] Reduced drop rate of Bubbly Shell (from 50% 1-3 to 20% 1)
+	[*] Altered recipe of Pebble Pelter to require a Bookcase instead of an Anvil
+	[*] Resprited Basalt
+	[*] Biome now generates on world creation
+[/olist]
+[*] Fixes:
+[olist]
+	[*] Loot from the Flooded Caves now generates in a specific order to prevent duplicate items
+[/olist]
+[*] Updated description files
+[/list]
 [hr]
-If you would like to contribute, join the discord: https://discord.gg/J9Ur6DVmJ7
+If you would like to help contribute, join the discord: https://discord.gg/J9Ur6DVmJ7

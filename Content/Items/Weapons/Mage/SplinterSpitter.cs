@@ -16,7 +16,7 @@ namespace XtraTerraria.Content.Items.Weapons.Mage
         {
             DisplayName.SetDefault("Splinter Spitter");
             Tooltip.SetDefault("Fires splinters at your enemies");
-            CreativeItemSacrificesCatalog.Instance.SacrificeCountNeededByItemId[Type] = 3;
+            CreativeItemSacrificesCatalog.Instance.SacrificeCountNeededByItemId[Type] = 1;
         }
 
         public override void SetDefaults()

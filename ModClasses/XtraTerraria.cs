@@ -1,6 +1,6 @@
 using XtraTerraria.Common.Systems;
 using XtraTerraria.Content.Items.Consumables;
-//using XtraTerraria.Content.NPCs.Bosses;
+using XtraTerraria.Content.NPCs.Bosses;
 using System;
 using Terraria.ModLoader;
 using static Terraria.ModLoader.ModContent;
@@ -14,19 +14,19 @@ namespace XtraTerraria.ModClasses
 
         public override void PostSetupContent()
         {
-            Mod bossChecklist = ModLoader.GetMod("BossChecklist");
-            if(bossChecklist != null)
+            // We call Boss Checklist to add our bosses to that mod. It's quite cool...
+            if (ModLoader.TryGetMod("BossChecklist", out Mod bossChecklist))
             {
-                /*bossChecklist.Call("AddBoss", //Yes
-                    this, //ModInstance
-                    "Zephyrus, Giver of Hydration", //Boss Name
-                    NPCType<Zephyrus>(), //Boss ID
-                    6.1f, //Slot in progression
-                    (Func<bool>)(() => DownedBossSystem.downedZephyrus), //Downed Boolean
-                    () => true, //Always shown or nah
-                    petsHere, //Collection
-                    ItemType<CalamariBait>(), //Spawn Items
-                    $"Use [i:ItemType<CalamariBait>()] in the Flooded Caves");*/ //Spawn Info
+                bossChecklist.Call("AddBoss", // Yes
+                    this, // ModInstance
+                    "Zephyrus, Giver of Hydration", // Boss Name
+                    NPCType<Zephyrus>(), // Boss ID
+                    6.1f, // Slot in progression
+                    () => DownedBossSystem.downedZephyrus, // Downed Boolean
+                    () => true, // Always shown or nah
+                    null, // Collection
+                    null, // ItemType<CalamariBait>(), // Spawn Items
+                    $"Use Cheat Sheet because ye..."); // Spawn Info
             }
         }
     }

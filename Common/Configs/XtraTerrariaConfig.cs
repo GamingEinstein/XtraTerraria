@@ -9,10 +9,10 @@ namespace XtraTerraria.Common.Configs
 
         [Header("$Mods.XtraTerraria.Config.TestFeaturesHeader")]
 
-        [Label("$Mods.XtraTerraria.Config.ToggleTestGeneration.Label")]
-        [Tooltip("$Mods.XtraTerraria.Config.ToggleTestGeneration.Tooltip")]
+        [Label("$Mods.XtraTerraria.Config.ToggleTest.Label")]
+        [Tooltip("$Mods.XtraTerraria.Config.ToggleTest.Tooltip")]
         [DefaultValue(false)]
-        public bool ToggleTestGeneration;
+        public bool ToggleTest;
 
     }
 }

@@ -18,7 +18,7 @@ namespace XtraTerraria.Content.Items.Weapons.Mage
         {
             DisplayName.SetDefault("Pebble Pelter");
             Tooltip.SetDefault("Shoots 3 pebbles at different angles");
-            CreativeItemSacrificesCatalog.Instance.SacrificeCountNeededByItemId[Type] = 3;
+            CreativeItemSacrificesCatalog.Instance.SacrificeCountNeededByItemId[Type] = 1;
         }
 
         public override void SetDefaults()
@@ -45,10 +45,10 @@ namespace XtraTerraria.Content.Items.Weapons.Mage
         public override void AddRecipes()
         {
             CreateRecipe()
-                .AddIngredient(ItemID.StoneBlock, 15)
-                .AddIngredient(ItemID.Wood, 20)
+                .AddIngredient(ItemID.Leather)
+                .AddIngredient(ItemID.StoneBlock, 20)
                 .AddIngredient(ItemID.FallenStar, 3)
-                .AddTile(TileID.Anvils)
+                .AddTile(TileID.Bookcases)
                 .Register();
         }
 

@@ -18,10 +18,10 @@ namespace XtraTerraria.Content.NPCs
                 npcLoot.Add(ItemDropRule.Common(ItemType<PureVenom>(), 3, 1, 4));
         }
 
-        public override void EditSpawnPool(IDictionary<int, float> pool, NPCSpawnInfo spawnInfo)
+        /*public override void EditSpawnPool(IDictionary<int, float> pool, NPCSpawnInfo spawnInfo)
         {
             if (spawnInfo.Player.InModBiome(GetInstance<FloodedCavesBiome>()))
                 pool.Add(NPCID.PinkJellyfish, SpawnCondition.CaveJellyfish.Chance);
-        }
+        }*/
     }
 }

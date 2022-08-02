@@ -1,4 +1,3 @@
-using XtraTerraria.Common.Configs;
 using static XtraTerraria.ModClasses.XtraTerraria;
 using Terraria;
 using Terraria.GameContent.Creative;
@@ -15,8 +14,9 @@ namespace XtraTerraria.Content.Items.Weapons.Melee
         public override void SetStaticDefaults()
         {
             DisplayName.SetDefault("Dev Sword");
-            Tooltip.SetDefault("Basic Modded Sword and such");
-            CreativeItemSacrificesCatalog.Instance.SacrificeCountNeededByItemId[Type] = 3;
+            Tooltip.SetDefault("Basic Modded Sword and such" +
+                "\n[c/ff00ff:~ Developer Item ~]");
+            CreativeItemSacrificesCatalog.Instance.SacrificeCountNeededByItemId[Type] = 1;
         }
 
         public override void SetDefaults()
@@ -27,6 +27,7 @@ namespace XtraTerraria.Content.Items.Weapons.Melee
             Item.height = 40;
             Item.useTime = 20;
             Item.useAnimation = 20;
+            Item.useTurn = true;
             Item.useStyle = ItemUseStyleID.Swing;
             Item.knockBack = 6;
             Item.value = Item.sellPrice(copper: 1);

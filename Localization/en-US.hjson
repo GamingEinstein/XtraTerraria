@@ -3,9 +3,9 @@
 		Config: {
 			TestFeaturesHeader: Test Features
 
-			ToggleTestGeneration: {
-				Label: Toggle Test Generation (Press PgUp + Pause)
-				Tooltip: Enables the ability to test Flooded Caves. Not recommended, as it's still a WIP and irreverable on the world...
+			ToggleTest: {
+				Label: Nothing to test ATM
+				Tooltip: For Dev purposes only
 			}
 		}
 	}

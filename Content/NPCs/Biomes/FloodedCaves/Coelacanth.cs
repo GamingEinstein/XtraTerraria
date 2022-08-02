@@ -1,5 +1,5 @@
 ﻿using XtraTerraria.Content.Biomes;
-using XtraTerraria.Content.Items.Misc;
+using XtraTerraria.Content.Items.Consumables;
 using static XtraTerraria.ModClasses.XtraTerraria;
 using Terraria;
 using Terraria.GameContent.Bestiary;
@@ -19,7 +19,7 @@ namespace XtraTerraria.Content.NPCs.Biomes.FloodedCaves
         public override void SetStaticDefaults()
         {
             DisplayName.SetDefault("Coelacanth");
-            Main.npcFrameCount[Type] = 5;
+            Main.npcFrameCount[Type] = 6;
 
             NPCID.Sets.NPCBestiaryDrawModifiers value = new NPCID.Sets.NPCBestiaryDrawModifiers(0)
             {
@@ -44,7 +44,7 @@ namespace XtraTerraria.Content.NPCs.Biomes.FloodedCaves
         public override float SpawnChance(NPCSpawnInfo spawnInfo)
         {
             if (spawnInfo.Player.InModBiome(GetInstance<FloodedCavesBiome>()))
-                return SpawnCondition.CavePiranha.Chance * 2f;
+                return SpawnCondition.Underground.Chance * 2f;
 
             return 0f;
         }
@@ -60,7 +60,7 @@ namespace XtraTerraria.Content.NPCs.Biomes.FloodedCaves
 
         public override void ModifyNPCLoot(NPCLoot npcLoot)
         {
-            npcLoot.Add(ItemDropRule.Common(ItemType<BubblyShell>(), 1, 2, 5));
+            npcLoot.Add(ItemDropRule.Common(ItemType<BubblyShell>(), 5, 1));
         }
     }
 }

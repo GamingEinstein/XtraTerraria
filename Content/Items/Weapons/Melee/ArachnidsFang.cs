@@ -14,7 +14,7 @@ namespace XtraTerraria.Content.Items.Weapons.Melee
         public override void SetStaticDefaults()
         {
             DisplayName.SetDefault("Arachnid's Fang");
-            CreativeItemSacrificesCatalog.Instance.SacrificeCountNeededByItemId[Type] = 3;
+            CreativeItemSacrificesCatalog.Instance.SacrificeCountNeededByItemId[Type] = 1;
         }
 
         public override void SetDefaults()
@@ -23,7 +23,7 @@ namespace XtraTerraria.Content.Items.Weapons.Melee
             Item.rare = ItemRarityID.LightRed;
             Item.value = Item.sellPrice(0, 2, 75, 0);
             Item.autoReuse = true;
-            SacrificeTotal = 1;
+            Item.useTurn = true;
             Item.damage = 55;
             Item.knockBack = 6;
             Item.width = 40;
