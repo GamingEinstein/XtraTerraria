@@ -13,6 +13,6 @@ namespace XtraTerraria.Common.Configs
         [Tooltip("$Mods.XtraTerraria.Config.ToggleTest.Tooltip")]
         [DefaultValue(false)]
         public bool ToggleTest;
-
+        // Adding comment here to test discord channel webhook
     }
 }
